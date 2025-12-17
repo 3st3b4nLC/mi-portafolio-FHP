@@ -362,3 +362,76 @@ input, textarea {
 .sobre-cuadro.activo .sobre-preview p {
     opacity: 0.5;
 }
+
+
+.theme-btn {
+    background: rgba(255,255,255,0.15);
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* ===== MODO CLARO ===== */
+body.light {
+    background:
+        linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1920") center/cover fixed;
+    color: #111;
+}
+
+body.light .navbar {
+    background: rgba(255,255,255,0.85);
+}
+
+body.light .navbar a {
+    color: #333;
+}
+
+body.light .navbar a:hover {
+    color: #000;
+}
+
+body.light .card,
+body.light .sobre-cuadro,
+body.light .super-form {
+    background: rgba(0,0,0,0.06);
+    color: #111;
+}
+
+body.light .info-overlay {
+    background: rgba(255,255,255,0.95);
+    color: #111;
+}
+
+body.light input,
+body.light textarea {
+    background: rgba(0,0,0,0.08);
+    color: #111;
+}
+
+body.light .footer {
+    background: rgba(0,0,0,0.08);
+}
+
+/* ===== FIX TEXTO "MÁS SOBRE MÍ" EN MODO CLARO ===== */
+body.light .sobre-info {
+    background: rgba(255,255,255,0.95);
+    color: #111;
+}
+
+body.light .sobre-info h3 {
+    color: #2f5bff;
+}
+
+body.light .sobre-info p {
+    color: #333;
+}
